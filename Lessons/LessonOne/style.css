@@ -137,7 +137,7 @@
         height: 80%;
         width: 100%;
         justify-self: flex-end;
-        background-image: url(/scr/CEFR-levels.png);
+        background-image: url(scr/CEFR-levels.png);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -233,7 +233,7 @@
     #inputoneitem2{
         width: 40%;
         height: 100%;
-        background-image: url(/scr/apples.jpg);
+        background-image: url(scr/apples.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -306,7 +306,7 @@
     #actimg{
         width: 40%;
         margin: 0;
-        background-image: url(/scr/practice1img.jpg);
+        background-image: url(scr/practice1img.jpg);
         background-position: center;
         background-size: cover;
         border-top-right-radius: 16px;
