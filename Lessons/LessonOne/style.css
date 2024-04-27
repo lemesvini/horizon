@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 800px) {
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: #EAEAEA;
@@ -108,7 +108,6 @@
         flex-direction: column;
     }
     .warmupitem{
-        background-image: url(src/warmupquestion.png);
         display: flex;
         height: 230px;
         width: 710px;
@@ -225,11 +224,14 @@
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: row;
     }
     #inputoneitem1{
+        display: flex;
+        flex-direction: column;
         width: 60%;
         height: 100%;
+        padding-left: 3%;
+        justify-content: center;
     }
     #inputoneitem2{
         width: 40%;
@@ -243,19 +245,17 @@
     }
     #inputoneitem1 h2{
         color: #18396e;
-        padding: 5%;
     }
     #inputoneitem1 h4{
         width: 70%;
         color: white;
-        padding: 2%;
         border-radius: 8px;
         background-color: #9e2a2b;
-        margin-left: 8%;
+        padding: 1%;
+        
     }
     #inputoneitem1 p {
-        font-size: large;
-        margin-left: 14%;
+      padding-left: 8%;  
     }
     #classInputTwo{
         height: 100%;
@@ -314,9 +314,13 @@
         border-bottom-right-radius: 16px;
     }
     #actone{
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         width: 60%;
-        padding: 4%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     #actone h3{
         text-align: center;
@@ -326,7 +330,7 @@
         border-radius: 16px;
     }
     #actone h4{
-        padding: 4%;
+        padding: 2%;
         color: gray;
         border-radius: 16px;
     }
@@ -446,9 +450,6 @@
         -5px -5px 9px #dddddd;
         z-index: -1000;
     }
-    #classWarmUp{
-
-    }
     .warmupitem{
         width: 82%;
         background-color: #18396e;
@@ -551,14 +552,10 @@
         height: 100%;
         
     }
-    #inp1container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-    }
     #inputoneitem1{
         width: 100%;
+        height: 100%;
+
     }
     #inputoneitem1 h2{
         color: #18396e;
