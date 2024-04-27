@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/scr/homepagestyles.css">
+    <link rel="icon" type="image/png" href="pages/scr/logoHconcluída(fundopreenchido).png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body onload="setDefault()">
+    <header id="header">
+        <div class="header-icons">
+            <a href="#" onclick="sidebardisplay()"><i class="fa-sharp fa-solid fa-bars"></i></a>
+            <img src="/scr/horizonheaderlogo.png">
+        </div>
+        <div class="headerlinks">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <div class="layout">
+        <nav id="sidebar" >
+            <div class="studentprofile">
+                <h3 id="studentname">Student's name</h3>
+                <div class="modulename">
+                    <p id="module"><strong>Module One (A1-A2)</strong></p>
+                </div>
+            </div>
+            <hr id="bottomline">
+            <div class="studentmenu">
+                <a href="#" class="menuitem" onclick="changeContent('itemhome', this)" style="display: none;"><i class="fa-solid fa-house"></i> Dashboard</a>
+                <a href="#" class="menuitem" id="defaultlink" onclick="changeContent('itemlessons', this)"><i class="fa-solid fa-list"></i> Lessons</a>
+                <a href="#" class="menuitem" onclick="changeContent('itemact', this)" style="display: none;"><i class="fa-solid fa-pen-to-square"></i> Activities</a>
+                <a href="#" class="menuitem" onclick="changeContent('itemcourseinfo', this)" style="display: none;"><i class="fa-solid fa-bookmark"></i> Appendix</a>
+                <a href="#" class="menuitem" onclick="changeContent('itemcourseinfo', this)" style="display: none;"><i class="fa-solid fa-circle-info"></i> Course Info</a>
+                
+            </div>
+        </nav>
+        <main id="mainContent">
+            <div id="itemhome" class="homepageitems" style="display: none;">
+                <!-- CONTEÚDO DO DASHBOARD -->
+                <h3 id="welcomelabel">Welcome, Student!</h3>
+                <div class="homecontainer">
+                    <div id="homepage1">
+                        <h5 id="cefrlabel">Common European Frameork of Reference</h5>
+                        <div id="cefr">
+                            <div id="a1a2" class="cefrthirds">A1-A2
+                            </div>
+                            <div id="b1b2" class="cefrthirds">B1-B2
+                            </div>
+                            <div id="c1c2" class="cefrthirds">C1-C2
+                                </div>
+                        </div>
+                    </div>
+                    <div id="homepage2">
+                        <h5 id="hpactlabel">Atividades de revisão do nível A1-A2</h5>
+                        <div id="actcontainer">
+                            <div id="hpact1" class="hpactitem">Atividade1</div>
+                            <div id="hpact2" class="hpactitem">Atividade2</div>
+                            <div id="hpact3" class="hpactitem">Atividade3</div>
+                            <div id="hpact4" class="hpactitem">Atividade4</div>
+                            <div id="hpact5" class="hpactitem">Atividade5</div>
+                            <div id="hpact6" class="hpactitem">Atividade6</div> 
+                        </div>     
+                    </div>
+                </div>
+            </div>
+            <div id="itemlessons" class="homepageitems" style="display: none;">
+                <!-- CONTEÚDO DO LESSONS -->
+                <div class="grid">
+                    <h3 class="titleunit">Unit One</h3>
+                    <div class="unit">
+                        <div class="lessonU1" onclick="window.location.href = '/Lessons/LessonOne/LessonOne.html'"> 
+                            
+                            <div class="lesson-title">Lesson 1</div>
+                            <div class="lesson-description">Welcome!</div>
+                        </div>
+                        <div class="lessonU1" onclick="window.location.href = '/lessonTwo/classtwo.html'">
+                           
+                            <div class="lesson-title">Lesson 2</div>
+                            <div class="lesson-description">Personal Information</div>
+                        </div>
+                        <div class="lessonU1" onclick="window.location.href = 'pages/classone.html'">
+                            
+                            <div class="lesson-title">Lesson 3</div>
+                            <div class="lesson-description">Routines are important!</div>
+                        </div>
+                        <div class="lessonU1" onclick="window.location.href = 'classfour.html'">
+                            
+                            <div class="lesson-title">Lesson 4</div>
+                            <div class="lesson-description">Food and Drinks I</div>
+                        </div>
+                        <div class="lessonU1" onclick="window.location.href = 'classfive.html'">
+                           
+                            <div class="lesson-title">Lesson 5</div>
+                            <div class="lesson-description">Fashion and clothing</div>
+                        </div>
+                        <div class="lessonU1" onclick="window.location.href = 'classsix.html'">
+                           
+                            <div class="lesson-title">Lesson 6</div>
+                            <div class="lesson-description">Unit Review</div>
+                        </div>
+                    </div>
+                    <h3 class="titleunit">Unit Two</h3>
+                    <div class="unit">
+                        
+                        <div class="lessonU2">
+                            
+                            <div class="lesson-title">Lesson 7</div>
+                            <div class="lesson-description">Places and Directions</div>
+                        </div>
+                        <div class="lessonU2">
+                            
+                            <div class="lesson-title">Lesson 8</div>
+                            <div class="lesson-description">Numbers and time</div>
+                        </div>
+                        <div class="lessonU2">
+                            
+                            <div class="lesson-title">Lesson 9</div>
+                            <div class="lesson-description">Describing people</div>
+                        </div>
+                        <div class="lessonU2">
+                           
+                            <div class="lesson-title">Lesson 10</div>
+                            <div class="lesson-description">Hobbies and activities</div>
+                        </div>
+                        <div class="lessonU2">
+                            
+                            <div class="lesson-title">Lesson 11</div>
+                            <div class="lesson-description">Travel and transportation</div>
+                        </div>
+                        <div class="lessonU2">
+                            
+                            <div class="lesson-title">Lesson 12</div>
+                            <div class="lesson-description">Unit Review</div>
+                        </div>
+                    </div>
+                    <h3 class="titleunit">Unit Three</h3>
+                    <div class="unit"> 
+                    
+                        <div class="lessonU3">
+                         
+                            <div class="lesson-title">Lesson 13</div>
+                            <div class="lesson-description">Health and feelings</div>
+                        </div>
+                        <div class="lessonU3">
+                            
+                            <div class="lesson-title">Lesson 14</div>
+                            <div class="lesson-description">Shopping and money</div>
+                        </div>
+                        <div class="lessonU3">
+                          
+                            <div class="lesson-title">Lesson 15</div>
+                            <div class="lesson-description">Everything is possible</div>
+                        </div>
+                        <div class="lessonU3">
+                          
+                            <div class="lesson-title">Lesson 16</div>
+                            <div class="lesson-description">Whose lesson is that?</div>
+                        </div>
+                        <div class="lessonU3">
+                           
+                            <div class="lesson-title">Lesson 17</div>
+                            <div class="lesson-description">Fortune Teller for a day</div>
+                        </div>
+                        <div class="lessonU3">
+                       
+                            <div class="lesson-title">Lesson 18</div>
+                            <div class="lesson-description">Unit Review</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="itemact" class="homepageitems" style="display: none;">
+                <!-- CONTEÚDO DO ACTIVITIES -->
+            </div>
+            <div id="itemcourseinfo" class="homepageitems" style="display: none;">
+                <!-- CONTEÚDO DO COURSE INFO -->
+                Course Info
+            </div>
+        </main>
+    </div>
+    <script>
+        function changeContent(menuitem, link) {
+            var homepageitems = document.getElementsByClassName("homepageitems");
+
+            // Hide all unit content divs
+            for (var i = 0; i < homepageitems.length; i++) {
+                homepageitems[i].style.display = "none";
+            }
+
+            // Show the selected unit's content
+            document.getElementById(menuitem).style.display = "block";
+            
+            // Remove highlight from all links
+            var menuitems = document.getElementsByClassName("menuitem");
+            for (var i = 0; i < menuitems.length; i++) {
+                menuitems[i].classList.remove("selected");
+            }
+            
+            // Add highlight to the clicked link
+            link.classList.add("selected");
+        }
+        function setDefault() {
+            // Simulate a click event on the default link
+            document.getElementById("defaultlink").click();
+        }
+        // Sidebar hide and show function
+        function sidebardisplay(){
+            var sidebar = document.getElementById('sidebar');
+            var main = document.getElementById('mainContent');
+
+            sidebar.classList.toggle('hidden');
+            
+            main.classList.toggle('full-width');
+
+            if (sidebar.style.display === "none"){
+                sidebar.style.display = "";
+            } else {
+                sidebar.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

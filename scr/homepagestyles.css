@@ -1,0 +1,287 @@
+html, body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Ensure header stays above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a3153;
+    border-bottom: 1px solid lightgrey;
+    height: 9vh;
+    width: 100%;
+}
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    align-items: center;
+}
+.header-icons a {
+    text-decoration: none;
+    color: #c3c3c3;
+    font-size: larger;
+    width: 15%;
+    height: 15%;
+}
+.header-icons a:hover{
+    color: white;
+}
+.header-icons img{
+    width: 200px;
+    height: 24px;
+    margin-left: 20px;
+}
+.headerlinks{
+    display: flex;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 1%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.headerlinks a{
+    color: #0a3153;
+    
+}
+.layout {
+    margin-top: 9dvh;
+    display: flex;
+    flex-direction: row;
+    /*display: grid;
+    grid-template-rows: 8vh 1fr;
+    grid-template-columns: 18% auto;
+    grid-column-gap: 0;
+    grid-template-areas: 
+        'header header'   
+        'sidebar main'; 
+    height: 100vh; /* Make layout cover the entire viewport */
+}
+
+
+
+nav {
+    position: fixed;
+    top: 9vh; /* Adjust for header height */
+    left: 0;
+    /*grid-template-areas: 'sidebar';*/
+    background-color: white;
+    height: 92vh; /* Fill remaining height of viewport */
+    width: 18%; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease, opacity 1s ease;
+}
+nav.hidden{
+    width: 0;
+}
+main {
+    /*grid-area: main;*/
+    width: 100%;
+    margin-left: 18%;
+    padding: 20px;
+    background-color: #eaeaea;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    transition: margin-left 0.3s ease;
+}
+main.full-width{
+    margin-left: 0;
+}
+.studentprofile{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+#studentname{
+    text-align: center;
+    font-size: 22px;
+    color: #0a3153;
+}
+.modulename{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    background-color: #0a3153;
+    justify-content: center;
+    border-radius: 16px;
+}
+#module{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 16px;
+}
+#bottomline{
+    margin-top: 3dvh;
+    background-color: #c3c3c3;
+    width: 80%;
+    height: 1px;
+    border: none;
+}
+.studentmenu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2dvh;
+    padding: 2dvh;
+}
+.menuitem{
+    padding: 6%;
+    border-radius: 8px;
+    width: 75%;
+    color: #c3c3c3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+.menuitem:hover{
+    background-color: #EAEAEA;
+    color: #0a3153;
+    
+    
+}
+.menuitem.selected{
+    background-color: #EAEAEA;
+    color: #0a3153;
+    font-weight: 1000;
+    cursor: pointer;
+}
+.homecontainer{
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 30px;
+
+}
+#cefr{
+    display: flex;
+    grid-template-columns: auto;
+    height: 24dvh;
+    align-items: center;
+    gap: 16px;
+    padding: 1%;
+}
+.cefrthirds{
+    background: #f5f5f5;
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 16px;
+}
+#actcontainer{
+    display: flex;
+    grid-template-columns: auto;
+    width: 100%;
+    height: 24dvh;
+    align-items: center;
+    gap: 16px;
+    padding: 1%;
+}
+.hpactitem{
+    width: 20%;
+    height: 80%;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+}
+/* Lesson container from the old classlist */
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 15px;
+}
+/* Css for the previous unit content
+.unit{
+    background: #6699cc;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    height: 19vh;
+    justify-content: space-between;
+    align-items: center;
+} */
+.unit {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 18px;
+    display: flex;
+    height: 19vh;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.lessonU1, .lessonU2, .lessonU3 {
+    width: 18%;
+    height: 21vh;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+    box-shadow:  5px 5px 9px #d0d0d0;
+             
+}
+.lessonU1{
+    background: linear-gradient(to bottom, #335c67  45%, white 40%);
+}
+.lessonU2{
+    background: linear-gradient(to bottom, rgb(153, 194, 134)  45%, white 40%);
+}
+.lessonU3{
+    background: linear-gradient(to bottom, #e26d5c  45%, white 40%);
+}
+.lessonU1:hover{ 
+        background-color: white;  
+        scale: 1.1;
+        cursor: pointer;
+}
+.lessonU2:hover{ 
+    background-color: white;  
+    scale: 1.1;
+    cursor: pointer;
+}
+.lessonU3:hover{ 
+    background-color: white;  
+    scale: 1.1;
+    cursor: pointer;
+}
+.lesson-title {
+    color: white;
+    font-weight: bold;
+    margin-top: 2vh;
+    margin-bottom: 5px;
+    align-self: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+.lesson-description {
+    color: #0a3153;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
+    font-size: 16px;
+    padding: 4px;
+}
+.titleunit{
+    color: #0a3153;
+    margin-bottom: 0;
+}
+
+
+

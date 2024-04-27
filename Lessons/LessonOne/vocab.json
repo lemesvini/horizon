@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Hello", "Hi", "How are you (doing)?", "What's up?", "Bye"],
+    "vocab1PT": ["Olá", "Oi", "Como vai?", "E ai?", "Tchau"],
+
+    "vocab2EN": ["I'm fine", "Excuse me", "Please", "Thank you", "Can you repeat, please?"],
+    "vocab2PT": ["Estou bem", "Com linceça", "Por favor", "Obrigado", "Pode repetir, por favor?"],
+
+    "vocab3EN": ["I", "You", "We", "They"],
+    "vocab3PT": ["Eu", "Você", "Nós", "Eles / Elas"],
+
+    "vocab4EN": ["A, An", "The", "to Be / Was, Were / Been", "to Work / Worked / Worked"],
+    "vocab4PT": ["Um, Uma", "O, A, Os, As", "Ser, Estar", "Trabalhar"]
+}

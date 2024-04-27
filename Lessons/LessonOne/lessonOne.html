@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson One</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL1.mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <aside>
+        <h3>Welcome!</h3>
+        <div id="container">
+            <a href="#" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i> Warm-Up</a>
+            <a href="#" class="classitem" onclick="changeContent('CEFR', this); callframe();"><i class="fa-solid fa-globe"></i> CEFR</a>
+            <a href="#" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i> Vocabulary </a>
+            <a href="#" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i> Articles</a>
+            <a href="#" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i> Verb To Be</a>
+            <a href="#" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i> Practice</a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem" style="background-image: url(/scr/warmupquestion.png);">
+                <h3>Qual a maneira certa de estudar Inglês?</h3>
+            </div>
+            <div class="warmupitem" style="background-image: url(/scr/warmupquestion.png);">
+                <h3>Como incluir o Inglês na nossa rotina?</h3>
+            </div>
+        </div>
+        <div id="classCEFR" class="classContent" style="display: none;">
+            <h3>Common European Framework of Reference:</h3>
+            <div id="CEFRimg"></div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Articles</h2>
+                    <h4><i class="fa-solid fa-circle-info"></i>  “A” is used before a <strong>consonant</strong> sound</h4>
+                    <p><i class="fa-solid fa-thumbtack"></i> I have <strong style="color: #9e2a2b;">a </strong>dog and you have <strong style="color: #9e2a2b;">a </strong>cat.</p>
+                    <p><i class="fa-solid fa-thumbtack"></i> You have <strong style="color: #9e2a2b;">a </strong>cat and I have <strong style="color: #9e2a2b;">a </strong>parrot.</p>
+                    <p><i class="fa-solid fa-thumbtack"></i> We have <strong style="color: #9e2a2b;">a </strong >house in the city.</p>
+                    <h4><i class="fa-solid fa-circle-info"></i>  “An” is used before a <strong>vowel</strong> sound</h4>
+                    <p><i class="fa-solid fa-thumbtack"></i> I have <strong style="color: #9e2a2b;">an </strong>apple.</p>
+                    <p><i class="fa-solid fa-thumbtack"></i> You have <strong style="color: #9e2a2b;">an </strong>iPhone.</p>
+                    <p><i class="fa-solid fa-thumbtack"></i> We have <strong style="color: #9e2a2b;">an </strong>apartment.</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Verb To Be</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4><i class="fa-regular fa-square-plus"></i> - Affirmative</h4>
+                    <p>I <strong style="color: #9e2a2b;">am</strong> brazilian.</p>
+                    <p>I<strong style="color: #9e2a2b;">'m</strong> a teacher.</p>
+                    <p>You<strong style="color: #9e2a2b;"> are</strong> a doctor.</p>
+                    <p>We<strong style="color: #9e2a2b;"> are</strong> students.</p>
+                    <p>They<strong style="color: #9e2a2b;">'re</strong> happy.</p>
+                </div>
+                <div id="two">
+                    <h4><i class="fa-regular fa-square-minus"></i> - Negative</h4>
+                    <p>I <strong style="color: #9e2a2b;">am not</strong> brazilian.</p>
+                    <p>I<strong style="color: #9e2a2b;">'m not</strong> a teacher.</p>
+                    <p>You<strong style="color: #9e2a2b;"> are not</strong> a doctor.</p>
+                    <p>We<strong style="color: #9e2a2b;"> aren't</strong> students.</p>
+                    <p>They<strong style="color: #9e2a2b;">'re not</strong> happy.</p>
+                </div>
+                <div id="three">
+                    <h4><i class="fa-solid fa-question"></i> - Interrogative</h4>
+                    <p><strong style="color: #9e2a2b;">Am I</strong> brazilian?</p>
+                    <p><strong style="color: #9e2a2b;">Am I</strong> a teacher?</p>
+                    <p><strong style="color: #9e2a2b;">Are you</strong> a doctor?</p>
+                    <p><strong style="color: #9e2a2b;">Are we</strong> students?</p>
+                    <p><strong style="color: #9e2a2b;">Are they</strong> happy?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Activity One</h3>
+                    <h4>Complete the dialog and practice with your teacher!</h4>
+                    
+                    <div>
+                        <p>A: Hello! _________ teacher Lex! And you, <strong>what’s your name?</strong></p>
+                        <p>B: Hey, teacher! I’m _________.</p>
+                        <p>A: How are you doing?</p>
+                        <p>B: _________, and you?</p>
+                        <p>A: <strong>I’m great! </strong>Thanks!</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
