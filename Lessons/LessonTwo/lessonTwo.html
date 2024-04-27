@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Two</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <aside>
+        <h3>Personal Information</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson One?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Como você se apresenta aos outros?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Simple Sentence Structure</h2>
+                    <h4><i class="fa-solid fa-circle-info"></i> [Subject] + [Verb] + rest of the sentence:</h4>
+                    <br>
+                    <p>I Like chocolate.</p>
+                    <p>I live in Brazil and I like it!</p>
+                    <p>You are my friend.</p>    
+                    <p>We aren't friends.</p>   
+                    <p>They use Instagram.</p> 
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Auxiliaries</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4><i class="fa-regular fa-square-plus"></i> - Affirmative</h4>
+                    <p>I <strong style="color: #9e2a2b;">work</strong> as a teacher.</p>
+                    <p>I <strong style="color: #9e2a2b;">work</strong> in an office.</p>
+                    <p>You<strong style="color: #9e2a2b;"> work</strong> from home.</p>
+                    <p>We<strong style="color: #9e2a2b;"> like</strong> English.</p>
+                    <p>They<strong style="color: #9e2a2b;"> work</strong> at Google.</p>
+                </div>
+                <div id="two">
+                    <h4><i class="fa-regular fa-square-minus"></i> - Negative</h4>
+                    <p>I<strong style="color: #9e2a2b;"> do not work</strong> as a teacher.</p>
+                    <p>You<strong style="color: #9e2a2b;"> don't work</strong> in an office.</p>
+                    <p>We<strong style="color: #9e2a2b;"> don't like</strong> sushi.</p>
+                    <p>They<strong style="color: #9e2a2b;"> don't work</strong> at Google.</p>
+                </div>
+                <div id="three">
+                    <h4><i class="fa-solid fa-question"></i> - Interrogative</h4>
+                    <p><strong style="color: #9e2a2b;">Do you</strong> work as a teacher?</p>
+                    <p><strong style="color: #9e2a2b;">Do you</strong> work in an office?</p>
+                    <p><strong style="color: #9e2a2b;">Do we</strong> like sushi?</p>
+                    <p><strong style="color: #9e2a2b;">Do they</strong> work at Google?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Activity One</h3>
+                    <h4>Introduce yourself following the example!</h4>
+                    
+                    <div>
+                        <p><strong>John Smith</strong></p>
+                        <p style="line-height: 1.8;">Hello! My name is John and I’m 21 years old. I live in Los Angeles, California and I love the beach. I work as a financial assistant and I study economy. I have two pets: one dog and one cat. I use Instagram and my username is @johnsmith</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
