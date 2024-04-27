@@ -148,3 +148,47 @@ fetch('./vocab.json')
     .catch(error => {
         console.error('Error Fetch:', error);
     });
+
+function phonewidth() {
+        var screenWidth = window.innerWidth;
+        var links = document.getElementsByClassName('classitem');
+        var iconClasses = ['fa-fire', 'fa-globe', 'fa-spell-check', 'fa-circle-plus', 'fa-circle-plus', 'fa-pen']; // Define icon classes for each link
+    
+        if (screenWidth <= 767) {
+            // Update content and width for smaller screens
+            for (var i = 0; i < links.length; i++) {
+                links[i].innerHTML = '<i class="fa-solid ' + iconClasses[i] + '"></i>';
+                links[i].style.width = '20%';
+            }
+        } else {
+            // Update content for larger screens
+            var linkContent = ['Warm-Up', 'CEFR', 'Vocabulary', 'Articles', 'Verb To Be', 'Practice'];
+            for (var i = 0; i < links.length; i++) {
+                links[i].innerHTML = '<i class="fa-solid fa-' + getIconClass(linkContent[i]) + '"></i> ' + linkContent[i];
+                links[i].style.width = ''; // Reset width
+            }
+        }
+    }
+    
+    function getIconClass(text) {
+        switch (text) {
+            case 'Warm-Up':
+                return 'fire';
+            case 'CEFR':
+                return 'globe';
+            case 'Vocabulary':
+                return 'spell-check';
+            case 'Articles':
+            case 'Verb To Be':
+                return 'circle-plus';
+            case 'Practice':
+                return 'pen';
+            default:
+                return '';
+        }
+    }
+    
+    window.onload = phonewidth;
+    window.onresize = phonewidth; // Call the function when the window is resized
+    
+    
