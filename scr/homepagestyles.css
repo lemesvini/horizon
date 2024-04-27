@@ -8,7 +8,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; /* Ensure header stays above other content */
+    z-index: 100; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,20 +58,18 @@ header {
     flex-direction: row;
 }
 
-
-
 nav {
     position: fixed;
-    top: 9vh; 
+    top: 9vh;
     left: 0;
     background-color: white;
     height: 92vh; 
-    width: 250px; 
-    z-index: 1000;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: width 0.3s ease, opacity 1s ease;
+    z-index: 1000;
 }
 nav.hidden{
     width: 0;
@@ -79,10 +77,10 @@ nav.hidden{
 main {
     /*grid-area: main;*/
     width: 100%;
-    margin-left: 18%;
+    margin-left: 250px;
     padding: 20px;
     background-color: #eaeaea;
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    overflow-y: auto; 
     transition: margin-left 0.3s ease;
 }
 main.full-width{
@@ -197,16 +195,6 @@ main.full-width{
     gap: 10px;
     padding: 15px;
 }
-/* Css for the previous unit content
-.unit{
-    background: #6699cc;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    height: 19vh;
-    justify-content: space-between;
-    align-items: center;
-} */
 .unit {
     margin-top: 0;
     margin-bottom: 40px;
@@ -218,6 +206,7 @@ main.full-width{
 }
 .lessonU1, .lessonU2, .lessonU3 {
     width: 18%;
+    min-width: 130px;
     height: 21vh;
     padding: 10px;
     border-radius: 10px;
