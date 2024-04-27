@@ -56,26 +56,18 @@ header {
     margin-top: 9dvh;
     display: flex;
     flex-direction: row;
-    /*display: grid;
-    grid-template-rows: 8vh 1fr;
-    grid-template-columns: 18% auto;
-    grid-column-gap: 0;
-    grid-template-areas: 
-        'header header'   
-        'sidebar main'; 
-    height: 100vh; /* Make layout cover the entire viewport */
 }
 
 
 
 nav {
     position: fixed;
-    top: 9vh; /* Adjust for header height */
+    top: 9vh; 
     left: 0;
-    /*grid-template-areas: 'sidebar';*/
     background-color: white;
-    height: 92vh; /* Fill remaining height of viewport */
-    width: 18%; /* Fixed width */
+    height: 92vh; 
+    width: 250px; 
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
