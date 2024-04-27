@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["House", "Apartment", "Birthday", "Roommate", "(Apartment/Housing) Complex"],
+    "vocab1PT": ["Casa", "Apartamento", "Aniversário", "Colega de quarto", "Condomínio"],
+
+    "vocab2EN": ["Account", "Username", "Password", "Pet", "@ (at)", "Zodiac Sign"],
+    "vocab2PT": ["Conta", "Nome de usuário", "Senha", "Animal de estimação", "Arroba", "Signo"],
+
+    "vocab3EN": ["My", "Your", "Our", "Their"],
+    "vocab3PT": ["Meu", "Seu, sua", "Nosso, nossa", "Deles, delas"],
+
+    "vocab4EN": ["to Have", "to Live", "to use", "to Go"],
+    "vocab4PT": ["Ter, possuir", "Morar, viver", "Usar", "Ir"]
+}
