@@ -314,9 +314,13 @@
         border-bottom-right-radius: 16px;
     }
     #actone{
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         width: 60%;
-        padding: 4%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     #actone h3{
         text-align: center;
