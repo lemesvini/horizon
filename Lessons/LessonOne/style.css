@@ -108,6 +108,7 @@
         flex-direction: column;
     }
     .warmupitem{
+        background-image: url(src/warmupquestion.png);
         display: flex;
         height: 230px;
         width: 710px;
