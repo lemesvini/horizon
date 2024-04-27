@@ -2,8 +2,8 @@
     "vocab1EN": ["House", "Apartment", "Birthday", "Roommate", "(Apartment/Housing) Complex"],
     "vocab1PT": ["Casa", "Apartamento", "Aniversário", "Colega de quarto", "Condomínio"],
 
-    "vocab2EN": ["Account", "Username", "Password", "Pet", "@ (at)", "Zodiac Sign"],
-    "vocab2PT": ["Conta", "Nome de usuário", "Senha", "Animal de estimação", "Arroba", "Signo"],
+    "vocab2EN": ["Account", "Username", "Password", "Pet", "@ (at)"],
+    "vocab2PT": ["Conta", "Nome de usuário", "Senha", "Animal de estimação", "Arroba"],
 
     "vocab3EN": ["My", "Your", "Our", "Their"],
     "vocab3PT": ["Meu", "Seu, sua", "Nosso, nossa", "Deles, delas"],
