@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Routine", "Gym", "Work", "Class", "Chore"],
+    "vocab1PT": ["Rotina", "Academia", "Trabalho", "Aula", "Tarefa (doméstica)"],
+
+    "vocab2EN": ["House", "Home", "Appointment", "Meeting", "Alarm Clock"],
+    "vocab2PT": ["Casa", "Lar", "Agendamento / Consulta", "Reunião", "Despertador"],
+
+    "vocab3EN": ["to Wake Up", "to Brush (my) Teeth", "to Take a Shower", "to Watch"],
+    "vocab3PT": ["Acordar", "Escovar os dentes", "Tomar banho", "Assistir"],
+
+    "vocab4EN": ["to Have Breakfast", "to Have Lunch", "to Have Dinner", "To sleep"],
+    "vocab4PT": ["Tomar café da manhã", "Almoçar", "Jantar", "Dormir"]
+}
