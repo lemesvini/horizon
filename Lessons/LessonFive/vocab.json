@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["T-shirt", "Sweater", "Dress", "Skirt", "Shorts"],
+    "vocab1PT": ["Camiseta", "Moletom", "Vestido", "Saia", "Calção"],
+
+    "vocab2EN": ["Shoes", "Sneakers", "Flip-flops", "Slippers", "(High) Heels"],
+    "vocab2PT": ["Sapatos", "Tênis", "Chinelos", "Pantufa", "Salto (alto)"],
+
+    "vocab3EN": ["Me", "You", "Us", "Them"],
+    "vocab3PT": ["Eu", "Você", "Nós", "Eles, Elas"],
+
+    "vocab4EN": ["Him", "Her", "It", "to Wear / Wore / Worn"],
+    "vocab4PT": ["Ele", "Ela", "Ele, Ela", "Usar, Vestir"]
+}

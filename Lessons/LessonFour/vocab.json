@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Rice", "Beans", "Pasta", "Meat", "Chicken"],
+    "vocab1PT": ["Arroz", "Feijão", "Macarrão", "Carne", "Frango"],
+
+    "vocab2EN": ["Juice", "Soda", "Beer", "Ice", "Ice Cream"],
+    "vocab2PT": ["Suco", "Refrigerante", "Cerveja", "Gelo", "Sorvete"],
+
+    "vocab3EN": ["He", "She", "It", "His / Her"],
+    "vocab3PT": ["Ele", "Ela", "(neutro) Ele, Ela", "Dele / Dela"],
+
+    "vocab4EN": ["to Eat / Ate / Eaten", "to Drink / Drank / Drunk", "to Want / Wanted / Wanted", "to Like / Liked / Liked"],
+    "vocab4PT": ["Comer", "Beber", "Querer", "Gostar"]
+}

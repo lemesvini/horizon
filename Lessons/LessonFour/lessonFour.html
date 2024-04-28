@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Four</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../scr/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <aside>
+        <h3>Food and Drinks</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Three?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Quais são suas comidas e bebidas favoritas?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Verb to Have and Verbs Eat and Drink</h2>
+                    <h4><i class="fa-solid fa-circle-info"></i> Replace "to Eat" or "to Drink" with <strong>"to Have"</strong></h4>
+                    <br>
+                    <p>I want to eat sushi <i class="fa-regular fa-circle-right" style="color: #18396e;"></i> I want <strong style="color: #9e2a2b;">to have</strong> sushi</p>
+                    <p>I eat rice and beans <i class="fa-regular fa-circle-right" style="color: #18396e;"></i> I <strong style="color: #9e2a2b;">have</strong> rice and beans</p>
+                    <p>You eat pasta <strong>for lunch</strong> <i class="fa-regular fa-circle-right" style="color: #18396e;"></i> You <strong style="color: #9e2a2b;">have</strong> pasta <strong>for lunch</strong></p>
+                    <p>We drink red wine <i class="fa-regular fa-circle-right" style="color: #18396e;"></i> We <strong style="color: #9e2a2b;">have</strong> red wine</p>
+                    <p>Let's <strong style="color: #9e2a2b;">have</strong> ice cream!</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Third Person Rule</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"S"</strong></h4>
+                    <p>He work<strong style="color: #9e2a2b;">s</strong> as a teacher.</p>
+                    <p>She like<strong style="color: #9e2a2b;">s</strong> to eat sushi.</p>
+                    <p>He love<strong style="color: #9e2a2b;">s</strong> to drink beer.</p>
+                    <p>She play<strong style="color: #9e2a2b;">s</strong> cards with her grandma.</p>
+                </div>
+                <div id="two">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"Es"</strong></h4>
+                    <p>Do<strong style="color: #9e2a2b;">es</strong> he work as a teacher?</p>
+                    <p>She watch<strong style="color: #9e2a2b;">es</strong> X-men 97.</p>
+                    <p>He wash<strong style="color: #9e2a2b;">es</strong> the dishes.</p>
+                    <p>She do<strong style="color: #9e2a2b;">es not</strong> like ice cream.</p>
+                </div>
+                <div id="three">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"Ies"</strong></h4>
+                    <P style="color: grey;">For verbs ending in [Consonant + Y]</P>
+                    <p>He stud<strong style="color: #9e2a2b;">ies</strong> economics.</p>
+                    <p>She part<strong style="color: #9e2a2b;">ies</strong> every weekend.</p>
+                    <p>He terrif<strong style="color: #9e2a2b;">ies</strong> her brother.</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Activity One</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>What is your favorite food?</p>
+                        <p>What is your <strong>least</strong> favorite food?</p>
+                        <p>What is your favorite drink?</p>
+                        <p>Does your best friend eat sushi?</p>
+                        <p>Does your best friend drink beer?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
