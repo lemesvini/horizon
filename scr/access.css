@@ -1,0 +1,160 @@
+body{
+    background-color: #006d77;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 90dvh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hidden {
+    display: none;
+}
+#container{
+    background-color: #006d77;
+    border-radius: 24px;
+    height: 56dvh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#info hr{
+    width: 85%;
+}
+#info div{
+    height: 50%;
+    width: 100%;
+    background-image: url(/scr/accesslogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+#info p{
+    width: 85%;
+    color: #bbd6df;
+    
+}
+#bttncontainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cat{
+    width: 50%;
+    height: 70px;
+    margin: 2%;
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+    color: #0a3153;
+    cursor: pointer;
+}
+#accessInput{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+#accessCodeInput{
+    width: 80%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+#submitbttn{
+    width: 80%;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+    cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: row;
+        height: 100dvh;
+        
+    }
+    #container{
+        height: 70dvh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #info{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #info h3{
+        width: 100%;
+        text-align: center;
+        font-size: xx-large;
+        color: #0a3153;
+    }
+    #info p{
+        width: 90%;
+        
+    }
+    #bttncontainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cat{
+        width: 70%;
+        height: 80px;
+        border: none;
+        border-radius: 8px;
+        font-size: large;
+        color: #0a3153;
+    }
+    #accessInput{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 2px solid red;
+        justify-content: center;
+        align-items: center;
+    }
+    #accessCodeInput{
+        width: 90%;
+        height: 18%;
+        border: 2px solid red;
+        border-radius: 8px;
+    }
+    
+    #submitbttn{
+        width: 90%;
+        height: 12%;
+        border: none;
+        border-radius: 8px;
+        font-size: large;
+    }
+}
