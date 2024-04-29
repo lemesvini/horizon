@@ -32,7 +32,7 @@ body{
     width: 85%;
 }
 #logo{
-    background-image: url(/scr/accesslogo.png);
+    background-image: url(accesslogo.png);
     height: 50%;
     width: 100%;
     background-position: center;
