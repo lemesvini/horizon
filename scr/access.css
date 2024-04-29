@@ -1,5 +1,5 @@
 body{
-    background-color: #006d77;
+    background-color: #0a3153;;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@ body{
     display: none;
 }
 #container{
-    background-color: #006d77;
     border-radius: 24px;
     height: 56dvh;
     width: 50%;
