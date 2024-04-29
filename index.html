@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Page</title>
+    <link rel="stylesheet" href="scr/access.css">
+</head>
+<body>
+    <div id="container">
+        <div id="info">
+            <div id="logo"></div>
+        </div>
+        <div id="bttncontainer">
+            <button class="cat" id="catTeacher" onclick="showInput('teacher')">Portal do Professor</button>
+            <button class="cat" id="catStudent" onclick="showInput('student')">Portal do Aluno</button>
+            <div id="accessInput" style="display: none;">
+                <input class="submit" type="password" id="accessCodeInput" placeholder="Enter Access Code">
+                <button class="submit" id="submitbttn" onclick="checkAccess()">Continue</button>
+                <input type="hidden" id="accessType">
+            </div>
+        </div>
+
+    </div>
+    <script src="/scr/script.js"></script>
+</body>
+</html>
