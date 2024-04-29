@@ -148,14 +148,12 @@ body{
         flex-direction: column;
         width: 100%;
         height: 100%;
-        border: 2px solid red;
         justify-content: center;
         align-items: center;
     }
     #accessCodeInput{
         width: 90%;
         height: 18%;
-        border: 2px solid red;
         border-radius: 8px;
     }
     
