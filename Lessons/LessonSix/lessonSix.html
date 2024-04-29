@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Six - Unit Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../scr/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../homepage.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '../../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>
+    </header>
+    <aside>
+        <h3>Unit One Review</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputThreeLink" class="classitem" onclick="changeContent('InputThree', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>Você tem alguma dúvida sobre a unidade?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>O que mais chamou sua atenção até aqui?</h3>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <h2 id="h2inputone"><i class="fa-solid fa-circle-plus"></i> | Verb To Be</h2>
+            
+            <div id="tobe">
+                <div id="one">
+                    <h4>I <i class="fa-regular fa-circle-right" style="color: #ec6c6e;"></i> <strong>"Am"</strong></h4>
+                    <p>I <strong style="color: #9e2a2b;">am</strong> brazilian.</p>
+                    <p>I<strong style="color: #9e2a2b;">'m</strong> a teacher.</p>
+                    <p>I<strong style="color: #9e2a2b;"> am not</strong> a teacher.</p>
+                    <p>I<strong style="color: #9e2a2b;">'m not</strong> sad!</p>
+                    <p><strong style="color: #9e2a2b;">Am I</strong> your friend?</p>
+
+                </div>
+                <div id="two">
+                    <h4>You, We, They <i class="fa-regular fa-circle-right" style="color: #ec6c6e;"></i> <strong>"Are"</strong></h4>
+                    <p>You<strong style="color: #9e2a2b;"> are</strong> a doctor.</p>
+                    <p>We<strong style="color: #9e2a2b;"> are</strong> hungry.</p>
+                    <p>We<strong style="color: #9e2a2b;"> aren't</strong> students.</p>
+                    <p><strong style="color: #9e2a2b;">Are they</strong> happy?</p>
+                    <p><strong style="color: #9e2a2b;">Are we</strong> friends?</p>
+                </div>
+                <div id="three">
+                    <h4>He, She, It <i class="fa-regular fa-circle-right" style="color: #ec6c6e;"></i> <strong>"Is"</strong></h4>
+                    <p>He<strong style="color: #9e2a2b;"> is</strong> a doctor.</p>
+                    <p>She<strong style="color: #9e2a2b;"> is not</strong> hungry.</p>
+                    <p>He<strong style="color: #9e2a2b;"> isn't</strong> a teacher.</p>
+                    <p><strong style="color: #9e2a2b;">Is it</strong> true?</p>
+                    <p><strong style="color: #9e2a2b;">Is she</strong> famous?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2 id="h2inputone"><i class="fa-solid fa-circle-plus"></i> | Auxiliaries</h2>
+            
+            <div id="tobe">
+                <div id="one">
+                    <h4><i class="fa-regular fa-square-plus"></i> - Affirmative</h4>
+                    <p>I <strong style="color: #9e2a2b;">work</strong> as a teacher.</p>
+                    <p>I <strong style="color: #9e2a2b;">work</strong> in an office.</p>
+                    <p>You<strong style="color: #9e2a2b;"> work</strong> from home.</p>
+                    <p>We<strong style="color: #9e2a2b;"> like</strong> English.</p>
+                    <p>They<strong style="color: #9e2a2b;"> work</strong> at Google.</p>
+                </div>
+                <div id="two">
+                    <h4><i class="fa-regular fa-square-minus"></i> - Negative</h4>
+                    <p>I<strong style="color: #9e2a2b;"> do not work</strong> as a teacher.</p>
+                    <p>You<strong style="color: #9e2a2b;"> don't work</strong> in an office.</p>
+                    <p>We<strong style="color: #9e2a2b;"> don't like</strong> sushi.</p>
+                    <p>They<strong style="color: #9e2a2b;"> don't work</strong> at Google.</p>
+                </div>
+                <div id="three">
+                    <h4><i class="fa-solid fa-question"></i> - Interrogative</h4>
+                    <p><strong style="color: #9e2a2b;">Do you</strong> work as a teacher?</p>
+                    <p><strong style="color: #9e2a2b;">Do you</strong> work in an office?</p>
+                    <p><strong style="color: #9e2a2b;">Do we</strong> like sushi?</p>
+                    <p><strong style="color: #9e2a2b;">Do they</strong> work at Google?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputThree" class="classContent" style="display: none;">
+            <h2 id="h2inputone"><i class="fa-solid fa-circle-plus"></i> | Third Person</h2>
+            
+            <div id="tobe">
+                <div id="one">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"S"</strong></h4>
+                    <p>He work<strong style="color: #9e2a2b;">s</strong> as a teacher.</p>
+                    <p>She like<strong style="color: #9e2a2b;">s</strong> to eat sushi.</p>
+                    <p>He love<strong style="color: #9e2a2b;">s</strong> to drink beer.</p>
+                    <p>She play<strong style="color: #9e2a2b;">s</strong> cards with her grandma.</p>
+                </div>
+                <div id="two">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"Es"</strong></h4>
+                    <p>Do<strong style="color: #9e2a2b;">es</strong> he work as a teacher?</p>
+                    <p>She watch<strong style="color: #9e2a2b;">es</strong> X-men 97.</p>
+                    <p>He wash<strong style="color: #9e2a2b;">es</strong> the dishes.</p>
+                    <p>She do<strong style="color: #9e2a2b;">es not</strong> like ice cream.</p>
+                </div>
+                <div id="three">
+                    <h4>Add <strong style="background-color: #9e2a2b;">"Ies"</strong></h4>
+                    <P style="color: grey;">For verbs ending in [Consonant + Y]</P>
+                    <p>He stud<strong style="color: #9e2a2b;">ies</strong> economics.</p>
+                    <p>She part<strong style="color: #9e2a2b;">ies</strong> every weekend.</p>
+                    <p>He terrif<strong style="color: #9e2a2b;">ies</strong> her brother.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
