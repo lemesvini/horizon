@@ -32,6 +32,7 @@ body{
     width: 85%;
 }
 #info div{
+    background-image: url(scr/accesslogo.png);
     height: 50%;
     width: 100%;
     background-position: center;
