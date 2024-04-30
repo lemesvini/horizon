@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Page</title>
-    <link rel="icon" type="image/png" href="scr/logowhite.png">
     <link rel="stylesheet" href="scr/access.css">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+    <script type="module" src="scr/login.js" defer></script>
 </head>
 <body>
     <div id="container">
         <div id="info">
             <div id="logo"></div>
         </div>
-        <div id="bttncontainer">
-            <button class="cat" id="catTeacher" onclick="showInput('teacher')">Portal do Professor</button>
-            <button class="cat" id="catStudent" onclick="showInput('student')">Portal do Aluno</button>
-            <div id="accessInput" style="display: none;">
-                <input class="submit" type="password" id="accessCodeInput" placeholder="Enter Access Code">
-                <button class="submit" id="submitbttn" onclick="checkAccess()">Continue</button>
-                <input type="hidden" id="accessType">
-            </div>
-        </div>
+        
+        <form id="loginForm">
+            <h4>Acesse sua conta da Horizon</h4>
+            <!--<h2>Login</h2>-->
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <a>Esqueci minha senha</a>
+            <button type="submit" id="loginSubmit">ENTRAR &nbsp<i class="fa-solid fa-circle-arrow-right"></i></i></button>
+            <!--<p class="form-footer">Don't have an account? <a href="#registerForm">Register</a></p>-->
+        </form>
 
     </div>
-    <script src="scr/script.js"></script>
+    <script src="/scr/script.js"></script>
 </body>
 </html>
