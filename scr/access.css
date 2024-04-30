@@ -1,5 +1,5 @@
 body{
-    background-color: #0a3153;;
+    background-color: #0a3153;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
@@ -7,15 +7,13 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }
-.hidden {
-    display: none;
-}
 #container{
     border-radius: 24px;
-    height: 56dvh;
+    height: 74dvh;
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 #info{
@@ -25,66 +23,67 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-#info hr{
-    width: 85%;
 }
 #logo{
-    background-image: url(accesslogo.png);
-    height: 50%;
-    width: 100%;
+    height: 150px;
+    width: 500px;
+    background-image: url(/scr/accesslogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
-#info p{
-    width: 85%;
-    color: #bbd6df;
-    
-}
-#bttncontainer{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cat{
-    width: 50%;
-    height: 70px;
-    margin: 2%;
-    border: none;
-    border-radius: 8px;
-    font-size: large;
-    color: #0a3153;
-    cursor: pointer;
-}
-#accessInput{
-    display: flex;
-    flex-direction: column;
+#loginForm{
     width: 70%;
-    justify-content: center;
+    margin-left: 2%;
+    padding: 3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 24px;
+    justify-content: center;
+    border-radius: 16px;
 }
-#accessCodeInput{
-    width: 80%;
-    height: 50px;
-    border-radius: 8px;
+#loginForm h4{
+    color: white;
+    margin-bottom: 5%;
+}
+#loginForm a{
+    width: 70%;
+    margin-bottom: 15px;
+    color: white;
+    text-align: right;
+    font-size: 12px;
+}
+#loginForm a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#loginEmail, #loginPassword{
+    width: 70%;
+    margin: 2%;
+    height: 18%;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+#loginEmail::placeholder, #loginPassword::placeholder{
+    color: #0a3153;
+}
+#loginSubmit{
+    width: 70%;
+    margin: 2%;
+    height: 20%;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
+    background-color: #337bff;;
+    font-size: large;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-#submitbttn{
-    width: 80%;
-    height: 34px;
-    border: none;
-    border-radius: 8px;
-    font-size: large;
-    cursor: pointer;
-}
 @media only screen and (max-width: 500px) {
     body{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -98,69 +97,60 @@ body{
         width: 90%;
         display: flex;
         flex-direction: column;
+        border: 1px solid red;
         
     }
     #info{
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        height: 60px;
     }
-    #info div{
-    background-image: url(accesslogo.png);
-    height: 50%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-    }
-    #info h3{
-        width: 100%;
-        text-align: center;
-        font-size: xx-large;
-        color: #0a3153;
-    }
-    #info p{
-        width: 90%;
-        
-    }
-    #bttncontainer{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .cat{
+    #loginForm{
         width: 70%;
-        height: 80px;
-        border: none;
-        border-radius: 8px;
-        font-size: large;
-        color: #0a3153;
-    }
-    #accessInput{
+        margin-left: 2%;
+        padding: 3%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        border-radius: 16px;
     }
-    #accessCodeInput{
-        width: 90%;
-        height: 18%;
-        border-radius: 8px;
+    #loginForm p{
+        color: white;
+        margin-bottom: 5%;
     }
-    
-    #submitbttn{
-        width: 90%;
+    #loginForm h4{
+        width: 100%;
+        margin-bottom: 32px;
+        color: white;
+        text-align: right;
+        font-size: 12px;
+    }
+    #loginForm a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #loginEmail, #loginPassword{
+        width: 100%;
+        height: 8%;
+        margin: 2%;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    #loginEmail::placeholder, #loginPassword::placeholder{
+        color: #0a3153;
+    }
+    #loginSubmit{
+        width: 70%;
+        margin: 2%;
         height: 12%;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
-        border-radius: 8px;
+        background-color: #337bff;;
         font-size: large;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
     }
 }
